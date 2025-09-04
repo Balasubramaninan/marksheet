@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UG Cumulative Statement of Marks and Grades</title>
+  <style>
+    :root{
+      --ink:#222;
+      --muted:#444;
+      --accent:#a90000;
+      --line:#c9b8b8;
+      --paper:#fff9f9;
+      --tiny:11px;
+      --small:12px;
+      --base:13px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background:#f1f1f1;
+      color:var(--ink);
+      font: var(--base)/1.35 "Times New Roman", Times, serif;
+    }
+    .page{
+      width: 794px;             
+      min-height: 1123px;       
+      margin: 24px auto;
+      background: var(--paper);
+      box-shadow: 0 4px 20px rgba(0,0,0,.12);
+      border: 1px solid #e5dcdc;
+      position:relative;
+      padding: 16px 18px 24px 18px;
+    }
+
+    
+    .topline{
+      display:grid;
+      grid-template-columns: 86px 1fr 100px;
+      align-items:center;
+      gap:12px;
+      border-bottom:2px solid var(--line);
+      padding-bottom:6px;
+    }
+    .logo{
+      width:86px;height:86px; border:1px solid var(--line);
+      display:grid;place-items:center; font-size:10px; color:#777;
+    }
+    .inst{
+      text-align:center;
+    }
+    .inst h1{
+      margin:0; font-size:18px; letter-spacing:.2px; text-transform:uppercase;
+    }
+    .inst .sub{margin:2px 0 0 0; font-size:11px; color:var(--muted)}
+    .inst .title{margin:6px 0 0 0; font-size:15px; font-weight:700; text-transform:uppercase;}
+    .inst .scheme{font-size:11px; margin-top:2px}
+    .photo{justify-self:end}
+    .photo img{width:88px; height:100px; object-fit:cover; border:1px solid var(--line)}
+
+    .meta{
+      margin-top:8px;
+      border:1px solid var(--line);
+      padding:6px;
+      display:grid; gap:6px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      font-size: var(--small);
+    }
+    .meta b{font-weight:700}
+    .meta .span2{grid-column: span 2}
+
+    
+    .statement-head{
+      display:grid; gap:0; margin-top:8px;
+      grid-template-columns: 160px 1fr 60px 60px 60px 60px 60px 60px 90px;
+      border:1px solid var(--line);
+      background:#f8efef;
+      font-weight:700; text-transform:uppercase; font-size:11px;
+    }
+    .statement-head div{ padding:6px 6px; border-right:1px solid var(--line)}
+    .statement-head div:last-child{border-right:none}
+
+    table.sheet{ width:100%; border-collapse:collapse; font-size: var(--small);}
+    table.sheet thead th{
+      background:#f8efef; border:1px solid var(--line); padding:6px; font-weight:700; text-transform:uppercase; font-size:11px;
+    }
+    table.sheet td{ border:1px solid var(--line); padding:6px 6px; vertical-align:top}
+    .nowrap{white-space:nowrap}
+    .right{text-align:right}
+    .center{text-align:center}
+
+    .footnote{font-size:10.5px; color:#555; margin-top:10px}
+
+    .classification{
+      margin-top:14px;
+      border:1px solid var(--line);
+      display:grid;
+      grid-template-columns: 110px 1fr 80px 70px 80px 70px 1fr;
+      font-size: var(--small);
+    }
+    .classification div{border-right:1px solid var(--line); padding:6px}
+    .classification div:last-child{border-right:none}
+
+   
+    .bottom{
+      margin-top:18px; display:flex; justify-content:space-between; align-items:flex-end;
+    }
+    .sign{ text-align:right; font-size:var(--small)}
+    .seal{ width:160px; height:100px; border:1px dashed var(--line); display:grid; place-items:center; color:#888; font-size:11px}
+
+    
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="topline">
+        
+      <div class="logo"> </div>
+      <div class="inst">
+        <h1>J.J. College of Arts and Science (Autonomous)</h1>
+        <div class="sub">Re-accredited with ‘A’ Grade by National Assessment and Accreditation Council (NAAC)<br> Sivapuram Post, Pudukkottai – 622 404. Affiliated to Bharathidasan University, Tiruchirappalli</div>
+        <div class="title">UG Cumulative Statement of Marks and Grades</div>
+        <div class="scheme">Under Choice Based Credit System &nbsp;–&nbsp; APR 2020</div>
+      </div>
+      <div class="photo"><img src="Images/Profile.jpeg" alt="Photo"></div>
+    </div>
+
+    <div class="meta">
+      <div><b>Folio No.</b> 1430</div>
+      <div><b>Register Number</b> U17VC203</div>
+      <div><b>Name of the Candidate</b> BALASUBRAMANYAM V</div>
+      <div><b>Date of Birth</b> 09/01/2000</div>
+
+      <div><b>Degree</b> B.Sc.</div>
+      <div><b>Part I</b> TAMIL</div>
+      <div><b>Part II</b> ENGLISH</div>
+      <div><b>Year of Study</b> 2017–2020</div>
+
+      <div class="span2"><b>Part III Programme (CC, AC, CE)</b> VISUAL COMMUNICATION</div>
+      <div><b>Month & Year</b> APR 2020</div>
+      <div><b>Result</b> PASS</div>
+    </div>
+
+    <table class="sheet" style="margin-top:8px">
+      <thead>
+        <tr>
+          <th class="nowrap">Sem / Part / Course Code</th>
+          <th>Course Title</th>
+          <th class="center">C</th>
+          <th class="center">IA</th>
+          <th class="center">ESE</th>
+          <th class="center">Total</th>
+          <th class="center">Grade Point</th>
+          <th class="center">Grade Letter</th>
+          <th class="center">Credit Point</th>
+          <th class="center nowrap">Result</th>
+          <th class="center nowrap">Month & Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1-1-U17TL1</td>
+          <td>Ekala Adhiyayan, Ilakkanam</td>
+          <td class="center">3</td>
+          <td class="center">24</td>
+          <td class="center">55</td>
+          <td class="center">79</td>
+          <td class="center">7.9</td>
+          <td class="center">A</td>
+          <td class="center">24</td>
+          <td class="center">PASS</td>
+          <td class="center">APR 18</td>
+        </tr>
+        <tr>
+          <td>1-2-U17EN1</td>
+          <td>Prose and English for Communication</td>
+          <td class="center">3</td>
+          <td class="center">25</td>
+          <td class="center">57</td>
+          <td class="center">82</td>
+          <td class="center">8.2</td>
+          <td class="center">A</td>
+          <td class="center">25</td>
+          <td class="center">PASS</td>
+          <td class="center">APR 18</td>
+        </tr>
+        <tr>
+          <td>1-3-U17VCC01</td>
+          <td>Introduction to Visual Communication</td>
+          <td class="center">4</td>
+          <td class="center">23</td>
+          <td class="center">53</td>
+          <td class="center">76</td>
+          <td class="center">7.6</td>
+          <td class="center">A</td>
+          <td class="center">30</td>
+          <td class="center">PASS</td>
+          <td class="center">APR 18</td>
+        </tr>
+        <tr>
+          <td>1-3-U17VCC02</td>
+          <td>Computer Graphics</td>
+          <td class="center">4</td>
+          <td class="center">27</td>
+          <td class="center">60</td>
+          <td class="center">87</td>
+          <td class="center">8.7</td>
+          <td class="center">A+</td>
+          <td class="center">35</td>
+          <td class="center">PASS</td>
+          <td class="center">APR 18</td>
+        </tr>
+        <tr>
+          <td>1-3-U17VCCP1</td>
+          <td>Drawing – Practical</td>
+          <td class="center">2</td>
+          <td class="center">23</td>
+          <td class="center">58</td>
+          <td class="center">81</td>
+          <td class="center">8.1</td>
+          <td class="center">A</td>
+          <td class="center">16</td>
+          <td class="center">PASS</td>
+          <td class="center">APR 18</td>
+        </tr>
+        <tr>
+          <td>2-1-U17TL2</td>
+          <td>Idhikaadal Ilakkanam</td>
+          <td class="center">3</td>
+          <td class="center">24</td>
+          <td class="center">54</td>
+          <td class="center">78</td>
+          <td class="center">7.8</td>
+          <td class="center">A</td>
+          <td class="center">23</td>
+          <td class="center">PASS</td>
+          <td class="center">APR 18</td>
+        </tr>
+        <tr>
+          <td>2-2-U17EN2</td>
+          <td>Poetry & English for Communication</td>
+          <td class="center">3</td>
+          <td class="center">26</td>
+          <td class="center">56</td>
+          <td class="center">82</td>
+          <td class="center">8.2</td>
+          <td class="center">A</td>
+          <td class="center">25</td>
+          <td class="center">PASS</td>
+          <td class="center">APR 18</td>
+        </tr>
+        <tr>
+          <td>2-3-U17VCC03</td>
+          <td>Photography</td>
+          <td class="center">4</td>
+          <td class="center">22</td>
+          <td class="center">54</td>
+          <td class="center">76</td>
+          <td class="center">7.6</td>
+          <td class="center">A</td>
+          <td class="center">30</td>
+          <td class="center">PASS</td>
+          <td class="center">APR 18</td>
+        </tr>
+        <tr>
+          <td>3-3-U18VCC07</td>
+          <td>Media Production</td>
+          <td class="center">4</td>
+          <td class="center">24</td>
+          <td class="center">57</td>
+          <td class="center">81</td>
+          <td class="center">8.1</td>
+          <td class="center">A</td>
+          <td class="center">32</td>
+          <td class="center">PASS</td>
+          <td class="center">APR 19</td>
+        </tr>
+        <tr>
+          <td>4-3-U18VCC10</td>
+          <td>Mass Communication Theories</td>
+          <td class="center">4</td>
+          <td class="center">21</td>
+          <td class="center">56</td>
+          <td class="center">77</td>
+          <td class="center">7.7</td>
+          <td class="center">A</td>
+          <td class="center">31</td>
+          <td class="center">PASS</td>
+          <td class="center">APR 19</td>
+        </tr>
+        <tr>
+          <td>6-3-U19VCC17</td>
+          <td>Project</td>
+          <td class="center">6</td>
+          <td class="center">27</td>
+          <td class="center">63</td>
+          <td class="center">90</td>
+          <td class="center">9.0</td>
+          <td class="center">O</td>
+          <td class="center">54</td>
+          <td class="center">PASS</td>
+          <td class="center">APR 20</td>
+        </tr>
+      
+      </tbody>
+    </table>
+
+    <div class="footnote">Declaration: Candidate is declared to have completed the Undergraduate Programme successfully only when the Cumulative Credits earned is a minimum of 140. Passing Minimum – CIA: 40%, ESE: 40% for theory, CIA: 40, ESE: 60 for practicals. For details of grading and credit system, refer college prospectus. Any correction invalidates this statement.</div>
+
+    <div class="classification">
+      <div><b>Part</b></div>
+      <div><b>WAM</b></div>
+      <div><b>GPA</b></div>
+      <div><b>Grade</b></div>
+      <div><b>Credit</b></div>
+      <div><b>%</b></div>
+      <div><b>Classification</b></div>
+
+      <div>I</div><div>59.50</div><div class="center">6.75</div><div class="center">B+</div><div class="center">12</div><div class="center">59.50%</div><div>GOOD</div>
+      <div>II</div><div>56.25</div><div class="center">6.75</div><div class="center">B+</div><div class="center">12</div><div class="center">56.25%</div><div>GOOD</div>
+      <div>III</div><div>68.90</div><div class="center">8.60</div><div class="center">A</div><div class="center">102</div><div class="center">69.91%</div><div>VERY GOOD</div>
+      <div>IV</div><div>67.70</div><div class="center">8.00</div><div class="center">A</div><div class="center">14</div><div class="center">—</div><div>VERY GOOD</div>
+    </div>
+
+    <div class="bottom">
+      <div class="seal">Round Seal</div>
+      <div class="sign">Controller of Examinations</div>
+    </div>
+
+  </div>
+</body>
+</html>
